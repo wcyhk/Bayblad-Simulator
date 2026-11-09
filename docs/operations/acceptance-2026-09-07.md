@@ -34,9 +34,9 @@
 
 提交 `20f6041` 的品質、安全、PostgreSQL 及 GitHub Pages 檢查全部通過：
 
-- 品質及正式環境安全：https://github.com/YuenHK/Bayblad-Simulator/actions/runs/34122135162
-- PostgreSQL：https://github.com/YuenHK/Bayblad-Simulator/actions/runs/34122135213
-- GitHub Pages：https://github.com/YuenHK/Bayblad-Simulator/actions/runs/34122135225
+- 品質及正式環境安全：https://github.com/wcyhk/Bayblad-Simulator/actions/runs/34122135162
+- PostgreSQL：https://github.com/wcyhk/Bayblad-Simulator/actions/runs/34122135213
+- GitHub Pages：https://github.com/wcyhk/Bayblad-Simulator/actions/runs/34122135225
 
 安全工作實際完成嚴格 TLS、canonical 切換、完整 HTTPS／WebSocket 對戰與教師探測（約 2 分 12 秒）、非 root 回執匯出邊界及安全瀏覽器測試。沒有跳過安全工作來取得通過結果。
 
@@ -48,7 +48,7 @@
 
 不能以本次 CI 或公開網站驗收通過，推定另一套受保護正式主機發布流程已完成。該 CI 的 release-host-core-integration、production-first-deploy-e2e 及 release-images 工作因事件條件未執行，不列作通過。
 
-另確認 Authorize release candidate 流程仍回報 startup_failure（https://github.com/YuenHK/Bayblad-Simulator/actions/runs/34114834322）；本次沒有繞過這項發布保護或宣稱受保護主機發布已完成。
+另確認 Authorize release candidate 流程仍回報 startup_failure（https://github.com/wcyhk/Bayblad-Simulator/actions/runs/34114834322）；本次沒有繞過這項發布保護或宣稱受保護主機發布已完成。
 
 ## 發布流程後續修復
 

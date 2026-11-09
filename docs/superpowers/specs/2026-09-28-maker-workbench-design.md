@@ -31,8 +31,8 @@
 
 | 標題 | 用途說明 | 正式連結 |
 | --- | --- | --- |
-| 了解這個專案 | 開源程式與專案介紹 | https://github.com/YuenHK/Bayblad-Simulator |
-| ShapeCut | 我的另一個作品 · 雷射切割工具 | https://yuenhk.github.io/ShapeCut/ |
+| 了解這個專案 | 開源程式與專案介紹 | https://github.com/wcyhk/Bayblad-Simulator |
+| ShapeCut | 我的另一個作品 · 雷射切割工具 | https://wcy.hk/ShapeCut/ |
 | 教師後台 | 對戰紀錄、設計與使用統計 | https://bayblad-simulator-api.onrender.com/admin/ |
 
 正式版三者皆為語義化連結；新分頁帶 noopener noreferrer，提供可辨識的焦點樣式。不可將教師口令放進網址。原型教師入口的提示按鈕只用於原型隔離，不搬入正式版。

@@ -7,5 +7,5 @@ export default defineConfig({
   webServer: [],
   outputDir: "test-results-public-cinematic",
   expect: { timeout: 60_000 },
-  projects: [{ name: "public-computer", use: { baseURL: "https://yuenhk.github.io/Bayblad-Simulator/" } }],
+  projects: [{ name: "public-computer", use: { baseURL: "https://wcy.hk/Bayblad-Simulator/" } }],
 });

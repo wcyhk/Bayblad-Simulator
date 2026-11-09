@@ -1,8 +1,8 @@
 import "./projectResources.css";
 
 const RESOURCES = [
-  { title: "了解這個專案", detail: "開源程式與專案介紹", href: "https://github.com/YuenHK/Bayblad-Simulator#readme", icon: "code" },
-  { title: "ShapeCut", detail: "我的另一個作品 · 雷射切割工具", href: "https://yuenhk.github.io/ShapeCut/", icon: "layers" },
+  { title: "了解這個專案", detail: "開源程式與專案介紹", href: "https://github.com/wcyhk/Bayblad-Simulator#readme", icon: "code" },
+  { title: "ShapeCut", detail: "我的另一個作品 · 雷射切割工具", href: "https://wcy.hk/ShapeCut/", icon: "layers" },
   { title: "教師後台", detail: "對戰紀錄、設計與使用統計", href: "https://bayblad-simulator-api.onrender.com/admin/", icon: "grid" },
 ] as const;
 

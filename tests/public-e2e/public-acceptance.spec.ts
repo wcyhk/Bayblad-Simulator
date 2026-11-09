@@ -49,7 +49,7 @@ async function openIsolatedGuest(browser: Browser, timings: RoundTiming[] = []):
       }
     } catch { /* Non-JSON transport packets carry no timing evidence. */ }
   }));
-  await page.goto("https://yuenhk.github.io/Bayblad-Simulator/");
+  await page.goto("https://wcy.hk/Bayblad-Simulator/");
   await waitConnected(page);
   return { context, page };
 }

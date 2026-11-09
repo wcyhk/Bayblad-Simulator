@@ -8,10 +8,10 @@
 
 | 入口 | 用途 |
 | --- | --- |
-| [學生測試網站](https://yuenhk.github.io/Bayblad-Simulator/) | 設計、預覽、房間及對戰，不要求手動輸入個人資料 |
+| [學生測試網站](https://wcy.hk/Bayblad-Simulator/) | 設計、預覽、房間及對戰，不要求手動輸入個人資料 |
 | [教師後台](https://bayblad-simulator-api.onrender.com/admin/) | 新版使用共用口令 `admin`；非私人帳戶，包含學生資料，勿公開轉載 |
 | [後端健康檢查](https://bayblad-simulator-api.onrender.com/health/ready) | 伺服器、資料庫及遷移就緒狀態 |
-| [建置與測試紀錄](https://github.com/YuenHK/Bayblad-Simulator/actions) | GitHub Actions 結果 |
+| [建置與測試紀錄](https://github.com/wcyhk/Bayblad-Simulator/actions) | GitHub Actions 結果 |
 
 公開站可能保留訪客對戰紀錄，請勿輸入真實學生或機密資料。請在自己的環境進行大量／負載測試，不要對共用測試站施加壓力。
 
@@ -34,7 +34,7 @@ Render 免費後端閒置後可能需要啟動時間。學生端單次身份請�
 
 在設計室「即時計算」下方按 **「傳送至 ShapeCut（供 雷射切割)」**，新分頁會自動接收三層板材，無須下載再上載。接收後仍由你選擇 **6 mm 板材**、按「開始製作」，核對分層預覽後輸出 DXF。手機的結果及匯出區同樣保持可用。
 
-傳送只在兩個瀏覽器分頁之間進行，不上傳模型到伺服器；接收分頁不會覆寫 ShapeCut 原有儲存專案。若新分頁被瀏覽器阻擋、已關閉或傳送逾時，可重試，或按 **「下載 STL（供 3D打印)」** 後在 [ShapeCut](https://yuenhk.github.io/ShapeCut/) 手動選擇檔案。「停止等待」只停止本頁等候；已送出的板材仍可能在 ShapeCut 匯入，請到該分頁確認。
+傳送只在兩個瀏覽器分頁之間進行，不上傳模型到伺服器；接收分頁不會覆寫 ShapeCut 原有儲存專案。若新分頁被瀏覽器阻擋、已關閉或傳送逾時，可重試，或按 **「下載 STL（供 3D打印)」** 後在 [ShapeCut](https://wcy.hk/ShapeCut/) 手動選擇檔案。「停止等待」只停止本頁等候；已送出的板材仍可能在 ShapeCut 匯入，請到該分頁確認。
 
 - 單一二進位 STL，只含頂／中／底三層板材；每層厚 6 mm，總高 18 mm，數值單位為 mm。STL 格式本身不記錄單位及顏色。
 - 保留本設計的輪廓、旋轉、上下排序、軸孔與螺絲孔；不含螺絲、軸心或金屬貼片。布林聯集去除板材間的內部接觸面，不留假空隙。
@@ -90,7 +90,7 @@ flowchart LR
 需要 Git、Node.js 24 或以上及 pnpm 11.19.0。部分部署契約測試另需 Ruby、Bash、OpenSSH；PostgreSQL／容器驗收需要相應資料庫及 Docker 環境。
 
 ```bash
-git clone https://github.com/YuenHK/Bayblad-Simulator.git
+git clone https://github.com/wcyhk/Bayblad-Simulator.git
 cd Bayblad-Simulator
 corepack enable
 corepack prepare pnpm@11.19.0 --activate
@@ -132,7 +132,7 @@ CINEMATIC_BATTLES=1 pnpm exec playwright test --config playwright.public.config.
 
 2026-09-08，`00c2c89` 已部署至 Render 及 Pages。公開 Chromium 完成人機整場對戰、返回同房重賽及喚醒恢復；教師登入、統計與 Excel 補測通過；前端 152 項測試通過。既有跨瀏覽器紀錄見 [驗收紀錄](docs/operations/acceptance-2026-09-07.md)。
 
-實體 iPad、音效聆聽、動畫美術品質、真實班級負載及免費平台長期可用性仍須另測。[該版本 CI](https://github.com/YuenHK/Bayblad-Simulator/actions/runs/34171866024) 的 quality 通過、production-security 失敗，不能寫成全部通過。最新結果以 Actions 為準。
+實體 iPad、音效聆聽、動畫美術品質、真實班級負載及免費平台長期可用性仍須另測。[該版本 CI](https://github.com/wcyhk/Bayblad-Simulator/actions/runs/34171866024) 的 quality 通過、production-security 失敗，不能寫成全部通過。最新結果以 Actions 為準。
 
 ## 開源授權及安全
 

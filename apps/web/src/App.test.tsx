@@ -67,8 +67,8 @@ describe("App upload lifecycle", () => {
     render(<App client={new RealtimeClient({ transport: new AppTransport() })} />);
     const footer = within(screen.getByRole("contentinfo", { name: "專案與更多作品" }));
     expect(footer.getByText("專案與工具")).toBeVisible();
-    expect(footer.getByRole("link", { name: "了解這個專案" })).toHaveAttribute("href", "https://github.com/YuenHK/Bayblad-Simulator#readme");
-    expect(footer.getByRole("link", { name: "ShapeCut" })).toHaveAttribute("href", "https://yuenhk.github.io/ShapeCut/");
+    expect(footer.getByRole("link", { name: "了解這個專案" })).toHaveAttribute("href", "https://github.com/wcyhk/Bayblad-Simulator#readme");
+    expect(footer.getByRole("link", { name: "ShapeCut" })).toHaveAttribute("href", "https://wcy.hk/ShapeCut/");
     expect(footer.getByText("我的另一個作品 · 雷射切割工具")).toBeVisible();
     const link = footer.getByRole("link", { name: "教師後台" });
     expect(link).toHaveAttribute("href", "https://bayblad-simulator-api.onrender.com/admin/");

@@ -11,7 +11,7 @@ export default defineConfig({
   workers: 1,
   reporter: [["line"]],
   use: {
-    baseURL: "https://yuenhk.github.io/Bayblad-Simulator/",
+    baseURL: "https://wcy.hk/Bayblad-Simulator/",
     trace: "retain-on-failure",
     screenshot: "only-on-failure",
     video: "retain-on-failure",
